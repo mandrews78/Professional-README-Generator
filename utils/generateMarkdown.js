@@ -4,16 +4,16 @@
 function renderLicenses (license) {
     if (license.name === 'MIT') {
         license.link = 'https://opensource.org/licenses/MIT';
-        license.badge = 'https://img.shields.io/badge/license-MIT-green.svg';
+        license.badge = `[![License](https://img.shields.io/badge/license-MIT-green.svg)]${license.link}`;
     }else if (license.name === 'AFL 3.0') {
         license.link = 'https://opensource.org/licenses/AFL-3.0';
-        license.badge = 'https://img.shields.io/badge/license-AFL%203.0-orange';
+        license.badge = `[![License](https://img.shields.io/badge/license-AFL%203.0-orange.svg)]${license.link}`;
     }else if (license.name === 'GPL') {
         license.link = 'https://opensource.org/licenses/GPL-3.0';
-        license.badge = 'https://img.shields.io/badge/license-GPL-blue';
+        license.badge = `[![License](https://img.shields.io/badge/license-GPL-blue.svg)]${license.link}`;
     }else if (license.name === 'MPL-2.0') {
         license.link = 'https://opensource.org/licenses/MPL-2.0';
-        license.badge = 'https://img.shields.io/badge/license-MPL%202.0%20-red';
+        license.badge = `[![License](https://img.shields.io/badge/license-MPL%202.0%20-red.svg)]${license.link}`;
     };
 }
 
