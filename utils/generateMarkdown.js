@@ -13,7 +13,7 @@ function renderLicenses (license) {
         license.badge = `![License](https://img.shields.io/badge/license-GPL-blue.svg)`;
     }else if (license.name === 'MPL-2.0') {
         license.link = 'https://opensource.org/licenses/MPL-2.0';
-        license.badge = `!License(https://img.shields.io/badge/license-MPL%202.0%20-red.svg)`;
+        license.badge = `![License](https://img.shields.io/badge/license-MPL%202.0%20-red.svg)`;
     };
 }
 
