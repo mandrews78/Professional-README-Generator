@@ -1,6 +1,6 @@
 
 # Professional-README-Generator
-https://github.com/mrandrews78/Professional-README-Generator
+https://github.com/mrandrews78@gmail.com/Professional-README-Generator
 
 ## Description 
 Professional-README-Generator
@@ -20,9 +20,9 @@ Professional-README-Generator
 ## Credits
 Professional-README-Generator
 ## License
-!License(https://img.shields.io/badge/license-MPL%202.0%20-red.svg)
-This project is licensed under the MPL-2.0 license. Please click here for more info: https://opensource.org/licenses/MPL-2.0
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+This project is licensed under the MIT license. Please click here for more info: https://opensource.org/licenses/MIT
 
 # Contact
 If you have any questions about the repository or about this application please send an email to: michaelandrews1978@gmail.com
-- Github: mrandrews78
+- Github: mrandrews78@gmail.com
