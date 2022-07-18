@@ -1,10 +1,9 @@
 // External Packages needed for this application
-const inquirer = require('inquirer')
-const fs = require('fs')
+const inquirer = require('inquirer');
+const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Array of questions for the user.
-
 const questions = [
 
   {
@@ -22,13 +21,13 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Pleasa provide the steps required to install your application for the Installation section?',
+    message: 'Pleasa provide install dependencies for your application for the Installation section?',
     name: 'installation',
     validate: (answer) => {if (answer) {return true} else {return 'Please provide installation steps, to continue'}}
   },
   {
     type: 'input',
-    message: 'Provide instructions on how to use your application for the Usage section ',
+    message: 'How do we use your application? ',
     name: 'usage',
     validate: (answer) => {if (answer) {return true} else {return 'Please provide usage instructions to continue'}}
   },
@@ -49,8 +48,8 @@ const questions = [
     type: 'list',
     message: 'Choose a license for your project? ',
     choices: ['AFL 3.0', 'GPL', 'MIT', 'MPL-2.0'],
-    name: 'license',
-    default: 'MIT',
+    name: 'license'
+    // default: 'MIT',
   },
   {
     type: 'input',
@@ -80,5 +79,16 @@ function createReadMe(fileName,data){
     })
 }
 
+//function to iniitialize the application
+function init(){
+    inquirer.prompt(questions)
+    .then(function(data){
+        createReadMe("README.md", generateMarkdown(data));
+        console.log(data)
+    })
+}
 
+
+//function call to intialize the application
+init();
         
