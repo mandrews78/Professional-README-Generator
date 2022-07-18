@@ -4,16 +4,16 @@
 function renderLicenses (license) {
     if (license.name === 'MIT') {
         license.link = 'https://opensource.org/licenses/MIT';
-        license.badge = `[![License](https://img.shields.io/badge/license-MIT-green.svg)]`;
+        license.badge = `![License](https://img.shields.io/badge/license-MIT-green.svg)`;
     }else if (license.name === 'AFL 3.0') {
         license.link = 'https://opensource.org/licenses/AFL-3.0';
-        license.badge = `[![License](https://img.shields.io/badge/license-AFL%203.0-orange.svg)]`;
+        license.badge = `![License](https://img.shields.io/badge/license-AFL%203.0-orange.svg)`;
     }else if (license.name === 'GPL') {
         license.link = 'https://opensource.org/licenses/GPL-3.0';
-        license.badge = `[![License](https://img.shields.io/badge/license-GPL-blue.svg)]`;
+        license.badge = `![License](https://img.shields.io/badge/license-GPL-blue.svg)`;
     }else if (license.name === 'MPL-2.0') {
         license.link = 'https://opensource.org/licenses/MPL-2.0';
-        license.badge = `[![License](https://img.shields.io/badge/license-MPL%202.0%20-red.svg)]`;
+        license.badge = `!License(https://img.shields.io/badge/license-MPL%202.0%20-red.svg)`;
     };
 }
 
@@ -53,9 +53,8 @@ ${license.badge}
 This project is licensed under the ${data.license} license. Please click here for more info: ${license.link}
 
 # Contact
-- Github: ${data.username}
-If you have any questions about the repository or about this application please send an email to: ${data.email}`
-
+If you have any questions about the repository or about this application please send an email to: ${data.email}
+- Github: ${data.username}`
 
 };
 
