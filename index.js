@@ -40,16 +40,15 @@ const questions = [
   {
     type: 'input',
     message: 'List your collaborators, if any, with links to their GitHub profiles.',
-    name: 'credits',
-    validate: (answer) => {if (answer) {return true} else {return 'Please provide tests if any to continue'}}
+    name: 'credits'
+    
   },
   {
-    //List of type of licenses to use, defaults to MIT
+    //List of type of licenses to use
     type: 'list',
     message: 'Choose a license for your project? ',
-    choices: ['AFL 3.0', 'GPL', 'MIT', 'MPL-2.0'],
+    choices: ['AFL 3.0', 'GPL', 'MIT', 'MPL-2.0', 'no license'],
     name: 'license'
-    // default: 'MIT',
   },
   {
     type: 'input',
