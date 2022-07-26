@@ -88,7 +88,7 @@ function createReadMe (fileName, data) {
 function init () {
   inquirer.prompt(questions)
     .then(function (data) {
-      createReadMe('README.md', generateMarkdown(data))
+      createReadMe('./dist/README.md', generateMarkdown(data))
       console.log(data)
     })
 }

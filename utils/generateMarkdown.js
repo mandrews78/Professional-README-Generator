@@ -61,11 +61,10 @@ ${data.description}
 - [License](#license)
 
 ## Installation
-The following dependencies must be installed to run the application
 ${data.installation}
 
 ## Usage
-In order to use this application, ${data.usage}
+${data.usage}
 
 ## Tests
 ${data.tests}
