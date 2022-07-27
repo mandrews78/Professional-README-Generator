@@ -28,7 +28,8 @@ Nodejs: https://nodejs.org/en/download/
 
 Inquirer package: https://www.npmjs.com/package/inquirer
 
-
+## Screenshot
+![image](https://user-images.githubusercontent.com/70594281/181146428-a4369fe5-1490-4f4d-b87b-0e6c8c71e8d4.png)
 
 
 ## Authors
