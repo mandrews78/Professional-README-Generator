@@ -35,7 +35,7 @@ function renderLicenseSection (license) {
   if (license.length === 0) {
     return ''
   }else {
-    return `## License
+    return `## license
         ${renderLicenseBadge(license)} 
         ${renderLicenseLink(license)}`
   }
@@ -54,11 +54,12 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
+- [License](#license)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
 - [Credits](#credits)
-- [License](#license)
+- [Contact](#contact)
 
 ## Installation
 ${data.installation}
